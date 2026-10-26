@@ -7,7 +7,7 @@ Problem Statement:
 Many usable resources go to waste while others lack basic necessities.
 Needo bridges this gap by creating a seamless donation ecosystem.
 
--Features
+## Features
 
 -User Features
 Register & Login (JWT Authentication)
@@ -27,7 +27,7 @@ Dashboard with analytics
 Role-based access
 Secure API integration
 
--Tech Stack
+## Tech Stack
 -Frontend:
 React.js,
 Tailwind CSS
