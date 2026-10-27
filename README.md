@@ -1,4 +1,4 @@
-#Needo – Helping Those in Need
+# Needo – Helping Those in Need
 
 Needo is a donation platform that connects donors with NGOs and people in need.
 It helps reduce waste by allowing users to donate surplus food, clothes, books, and other resources efficiently.
@@ -7,7 +7,7 @@ Problem Statement:
 Many usable resources go to waste while others lack basic necessities.
 Needo bridges this gap by creating a seamless donation ecosystem.
 
--Features
+## Features
 
 -User Features
 Register & Login (JWT Authentication)
@@ -27,7 +27,7 @@ Dashboard with analytics
 Role-based access
 Secure API integration
 
--Tech Stack
+## Tech Stack
 -Frontend:
 React.js,
 Tailwind CSS
