@@ -53,9 +53,9 @@ const DonationDetails = () => {
   }
 
   return (
-    <div className="max-w-5xl mx-auto p-6 bg-white rounded-2xl shadow">
+    <div className="max-w-5xl mx-auto p-4 sm:p-6 bg-white rounded-2xl shadow">
       {/* Header */}
-      <div className="flex items-center justify-between mb-8">
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-8">
         <h1 className="text-2xl font-bold text-sky-600 flex items-center gap-2">
           📊 Donation Details
         </h1>
@@ -119,7 +119,7 @@ const DonationDetails = () => {
               key={a._id}
               className="border rounded-xl p-4 bg-gray-50 shadow-sm hover:shadow-md transition"
             >
-              <div className="flex justify-between items-center mb-2">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-2 mb-2">
                 <p className="font-semibold text-gray-800">
                   {a.ngo_id.ngo_name} ({a.ngo_id.registration_no})
                 </p>

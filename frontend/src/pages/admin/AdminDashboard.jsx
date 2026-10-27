@@ -29,7 +29,7 @@ import {
 } from "recharts";
 
 const StatCard = ({ label, value, icon: Icon }) => (
-  <div className="relative bg-gradient-to-br from-white/80 to-green-50 border border-green-100 rounded-2xl p-6 flex items-center gap-5 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
+  <div className="relative bg-gradient-to-br from-white/80 to-green-50 border border-green-100 rounded-2xl p-4 sm:p-6 flex items-center gap-3 sm:gap-5 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1">
     <div className={`p-3 rounded-full bg-green-100 text-green-700`}>
       <Icon className="w-7 h-7" />
     </div>
@@ -118,11 +118,11 @@ const AdminDashboard = () => {
 
   return (
     <Layout>
-      <div className="space-y-10 p-6">
+      <div className="space-y-6 sm:space-y-10 p-3 sm:p-6">
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center">
           <div>
-            <h1 className="text-4xl font-extrabold text-gray-900">Admin Dashboard</h1>
+            <h1 className="text-2xl sm:text-4xl font-extrabold text-gray-900">Admin Dashboard</h1>
             <p className="text-gray-500 mt-1">
               Overview of users, NGOs, and donation performance
             </p>
@@ -149,7 +149,7 @@ const AdminDashboard = () => {
         )}
 
         {/* Quick Actions */}
-        <div className="bg-white border border-green-100 p-6 rounded-2xl shadow-sm">
+        <div className="bg-white border border-green-100 p-4 sm:p-6 rounded-2xl shadow-sm">
           <h2 className="text-lg font-semibold mb-5 text-gray-800">Quick Actions</h2>
           <div className="flex flex-wrap gap-4">
             <Link to="/admin/users" className="px-5 py-2.5 bg-green-600 text-white rounded-lg hover:bg-green-700 transition">
@@ -167,7 +167,7 @@ const AdminDashboard = () => {
         {/* Analytics Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* Line Chart */}
-          <div className="bg-white border border-green-100 p-6 rounded-2xl shadow-sm">
+          <div className="bg-white border border-green-100 p-4 sm:p-6 rounded-2xl shadow-sm">
             <h3 className="text-lg font-semibold mb-4 text-gray-800">Weekly Donations Trend</h3>
             <ResponsiveContainer width="100%" height={250}>
               <LineChart data={donationsTrend}>
@@ -181,7 +181,7 @@ const AdminDashboard = () => {
           </div>
 
           {/* Pie Chart */}
-          <div className="bg-white border border-green-100 p-6 rounded-2xl shadow-sm">
+          <div className="bg-white border border-green-100 p-4 sm:p-6 rounded-2xl shadow-sm">
             <h3 className="text-lg font-semibold mb-4 text-gray-800">Donations by Category</h3>
             <ResponsiveContainer width="100%" height={250}>
               <PieChart>
@@ -199,7 +199,7 @@ const AdminDashboard = () => {
         {/* Top Donors + Activity Feed */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {/* 🏆 Top Donors */}
-          <div className="bg-white border border-green-100 p-6 rounded-2xl shadow-sm">
+          <div className="bg-white border border-green-100 p-4 sm:p-6 rounded-2xl shadow-sm">
             <h3 className="text-lg font-semibold mb-4 text-gray-800 flex items-center gap-2">
               <Crown className="text-yellow-500 w-5 h-5" /> Top Donors
             </h3>
@@ -223,7 +223,7 @@ const AdminDashboard = () => {
           </div>
 
           {/* 🕒 Recent Activity */}
-          <div className="bg-white border border-green-100 p-6 rounded-2xl shadow-sm">
+          <div className="bg-white border border-green-100 p-4 sm:p-6 rounded-2xl shadow-sm">
             <h3 className="text-lg font-semibold mb-4 text-gray-800 flex items-center gap-2">
               <Clock className="text-blue-500 w-5 h-5" /> Recent Activity
             </h3>

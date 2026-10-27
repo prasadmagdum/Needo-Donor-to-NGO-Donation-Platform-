@@ -29,7 +29,7 @@ const DonationCard = ({ donation, onEdit, onDelete, onAccept, showActions }) => 
         <h3 className="text-lg font-semibold text-gray-800">{donation?.title}</h3>
         <p className="text-sm text-gray-500">{donation?.category}</p>
         {donation?.pickup_location && (
-          <p className="flex items-center gap-1 text-gray-600 mt-2">
+          <p className="flex items-start gap-1 text-gray-600 mt-2 break-words">
             <MapPin size={14} /> {donation.pickup_location}
           </p>
         )}

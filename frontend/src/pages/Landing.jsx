@@ -69,7 +69,7 @@ useEffect(() => {
         <Navbar />
 
       {/* HERO */}
-      <header className="relative min-h-screen flex items-center justify-center text-white">
+      <header className="relative min-h-screen flex items-center justify-center py-16 text-white">
 
         {/*  BACKGROUND IMAGE SLIDER */}
         <div className="absolute inset-0">
@@ -84,9 +84,9 @@ useEffect(() => {
         <div className="absolute inset-0 bg-black/60"></div>
 
         {/*CENTER CONTENT */}
-        <div className="relative z-10 text-center px-6 max-w-3xl">
+        <div className="relative z-10 text-center px-4 sm:px-6 max-w-3xl">
 
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold leading-tight">
             Share Surplus, <br />
             <span className="text-yellow-300">Change Lives</span>
           </h1>
@@ -123,11 +123,11 @@ useEffect(() => {
       </header>
 
       {/* HOW IT WORKS */}
-      <section className="bg-white py-24">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+      <section className="bg-white py-14 sm:py-20 md:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
 
           {/* TITLE */}
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-16 text-center 
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-10 sm:mb-16 text-center
                bg-gradient-to-r from-green-500 via-emerald-400 to-green-500 
                text-transparent bg-clip-text relative inline-block">How It Works</h2>
 
@@ -176,11 +176,11 @@ useEffect(() => {
       </section>
 
 
-      <section className="bg-white py-24 text-center">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="bg-white py-14 sm:py-20 md:py-24 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
           {/* TITLE */}
-          <h2 className="text-4xl md:text-5xl font-extrabold mb-16 
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-10 sm:mb-16
                         bg-gradient-to-r from-green-500 to-emerald-400 
                         text-transparent bg-clip-text inline-block">
                         You Can Do with Needo
@@ -292,11 +292,11 @@ useEffect(() => {
         </div>
       </section> */}
 
-      <section className="bg-green-50 py-24 text-center">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="bg-green-50 py-14 sm:py-20 md:py-24 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
 
           {/* TITLE */}
-          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-800 mb-6">
             Be the Reason Someone Smiles Today
           </h2>
 
@@ -309,8 +309,8 @@ useEffect(() => {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-white text-gray-600 py-14 border-t">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10 text-sm">
+      <footer className="bg-white text-gray-600 py-10 sm:py-14 border-t">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 text-sm">
 
           {/* BRAND */}
           <div>
@@ -379,7 +379,7 @@ useEffect(() => {
           <div>
             <h3 className="text-gray-800 font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
-              <li>📧 prasadmagdum307@gmail.com</li>
+              <li className="break-all">📧 prasadmagdum307@gmail.com</li>
               <li>📞 8767963581</li>
             </ul>
 

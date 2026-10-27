@@ -119,7 +119,7 @@ const NGODashboard = () => {
   );
 
   return (
-    <div className="p-6 space-y-8 max-w-6xl mx-auto relative">
+    <div className="p-3 sm:p-6 space-y-6 sm:space-y-8 max-w-6xl mx-auto relative">
       {showConfetti && <Confetti width={width} height={height} recycle={false} />}
 
     {/* Header */}
@@ -154,7 +154,7 @@ const NGODashboard = () => {
 
       {/*  Impact Gradient Card */}
       <div
-        className="rounded-2xl p-6 shadow-lg overflow-hidden"
+        className="rounded-2xl p-4 sm:p-6 shadow-lg overflow-hidden"
         style={{
           background: "linear-gradient(90deg,#e8f8f5,#f0f7ff)",
         }}

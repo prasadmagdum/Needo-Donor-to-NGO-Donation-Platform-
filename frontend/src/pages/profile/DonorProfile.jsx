@@ -72,8 +72,8 @@ const DonorProfile = () => {
   }
 
   return (
-    <div className="bg-gray-50 min-h-screen py-10 px-4">
-      <div className="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow">
+    <div className="bg-gray-50 min-h-screen py-6 sm:py-10 px-3 sm:px-4">
+      <div className="max-w-3xl mx-auto bg-white p-4 sm:p-8 rounded-2xl shadow">
 
         {/* HEADER */}
         <div className="flex items-center justify-between mb-6">
@@ -155,7 +155,7 @@ const DonorProfile = () => {
             </div>
 
             {/* BUTTONS */}
-            <div className="flex gap-3 pt-2">
+            <div className="flex flex-wrap gap-3 pt-2">
               <button
                 type="submit"
                 disabled={saving}

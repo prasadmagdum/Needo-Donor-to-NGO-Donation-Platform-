@@ -47,7 +47,7 @@ const AvailableDonations = () => {
   }
 
   return (
-    <div className="p-6">
+    <div className="p-3 sm:p-6">
       <h1 className="text-2xl font-bold text-sky-600 mb-6">
         🌍 Available Donations
       </h1>

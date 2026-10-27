@@ -22,7 +22,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link
             to="/"
-            className="text-5xl font-extrabold text-green-600 hover:text-green-700 transition"
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-green-600 hover:text-green-700 transition"
           >
             Needo
             

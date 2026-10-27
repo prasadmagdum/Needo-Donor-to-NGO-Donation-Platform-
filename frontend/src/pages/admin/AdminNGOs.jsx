@@ -90,11 +90,11 @@ const AdminNGOs = () => {
 
   return (
     <Layout>
-      <div className="space-y-8 p-4">
+      <div className="space-y-6 sm:space-y-8 p-2 sm:p-4">
         {/* Header Section */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
           <div>
-            <h1 className="text-3xl font-bold text-gray-800">NGO Verification</h1>
+            <h1 className="text-2xl sm:text-3xl font-bold text-gray-800">NGO Verification</h1>
             <p className="text-gray-500 text-sm">
               Review, verify, or reject NGOs registered on the platform
             </p>
@@ -157,7 +157,7 @@ const AdminNGOs = () => {
                         <Building2 className="w-6 h-6" />
                       </div>
                       <div>
-                        <h2 className="font-semibold text-gray-800 text-lg">
+                        <h2 className="font-semibold text-gray-800 text-lg break-words">
                           {ngo.ngo_name || "Unnamed NGO"}
                         </h2>
                         <p className="text-xs text-gray-500">
@@ -175,7 +175,7 @@ const AdminNGOs = () => {
                     {ngo.user_id?.email && (
                       <p className="flex items-center gap-2">
                         <Mail className="w-4 h-4 text-gray-400" />
-                        {ngo.user_id.email}
+                        <span className="break-all">{ngo.user_id.email}</span>
                       </p>
                     )}
                     {ngo.user_id?.phone && (

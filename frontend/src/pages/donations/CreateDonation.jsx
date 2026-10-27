@@ -110,8 +110,8 @@ const CreateDonation = () => {
 
   return (
     <div className="p-4 sm:p-6">
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-md border border-yellow-100 p-6">
-        <h2 className="flex items-center gap-2 text-2xl font-bold mb-6 text-gray-800">
+      <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-md border border-yellow-100 p-4 sm:p-6">
+        <h2 className="flex items-center gap-2 text-xl sm:text-2xl font-bold mb-6 text-gray-800">
           <PlusCircle className="text-yellow-500" />
           Create Donation
         </h2>
@@ -221,7 +221,7 @@ const CreateDonation = () => {
 
           {/* File Upload */}
           <div
-            className={`border-2 rounded-lg p-6 text-center transition ${
+            className={`border-2 rounded-lg p-4 sm:p-6 text-center transition ${
               dragOver
                 ? "border-yellow-400 bg-yellow-50"
                 : "border-dashed border-yellow-300 bg-white"

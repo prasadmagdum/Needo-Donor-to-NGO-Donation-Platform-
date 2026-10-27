@@ -75,9 +75,9 @@ const MyAccepted = () => {
         });
 
   return (
-    <div className="p-1 md:p-4 bg-gray-50 min-h-screen">
+    <div className="p-1 sm:p-2 md:p-4 bg-gray-50 min-h-screen">
       {/* Title */}
-      <div className="flex items-center gap-2 mb-5">
+      <div className="flex flex-wrap items-center gap-2 mb-5">
         <ClipboardCheck className="text-sky-600 w-6 h-6" />
         <h1 className="text-xl md:text-3xl font-bold text-gray-800">
           My Accepted Donations

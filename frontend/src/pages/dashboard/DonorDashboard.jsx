@@ -70,7 +70,7 @@ const DonorDashboard = () => {
     );
 
   return (
-    <div className="p-4 md:p-8 space-y-8 max-w-5xl mx-auto relative overflow-x-hidden">
+    <div className="p-3 sm:p-4 md:p-8 space-y-6 sm:space-y-8 max-w-5xl mx-auto relative overflow-x-hidden">
       
       {/* Confetti Fix */}
       {showConfetti && (
@@ -100,7 +100,7 @@ const DonorDashboard = () => {
 
       {/* Motivation */}
       {stats.donations > 0 && (
-        <div className="bg-gradient-to-r from-green-100 to-blue-100 rounded-2xl shadow-lg p-6 flex flex-col md:flex-row items-center justify-between w-full overflow-hidden">
+        <div className="bg-gradient-to-r from-green-100 to-blue-100 rounded-2xl shadow-lg p-4 sm:p-6 flex flex-col md:flex-row items-center justify-between w-full overflow-hidden">
           <div className="max-w-full">
             <h2 className="text-2xl font-semibold text-gray-800 mb-2 break-words">
               You’re spreading kindness!

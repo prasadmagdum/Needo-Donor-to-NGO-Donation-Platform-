@@ -8,7 +8,7 @@ const Dashboard = () => {
   return (
     <div className="space-y-8">
       {/* Welcome + Impact */}
-      <div className="bg-white p-6 rounded-xl shadow">
+      <div className="bg-white p-4 sm:p-6 rounded-xl shadow">
         <h1 className="text-xl font-bold text-gray-800">
           Welcome back, {user?.name || "Friend"}! 👋
         </h1>
@@ -43,24 +43,24 @@ const Dashboard = () => {
       </div>
 
       {/* Recent Donations */}
-      <div className="bg-white p-6 rounded-xl shadow">
+      <div className="bg-white p-4 sm:p-6 rounded-xl shadow">
         <h2 className="text-lg font-bold mb-4">Recent Donations</h2>
         <div className="space-y-3">
-          <div className="p-4 border rounded-lg flex justify-between items-center">
+          <div className="p-4 border rounded-lg flex flex-wrap justify-between items-center gap-2">
             <div>
               <p className="font-semibold text-gray-700">Fresh Vegetables & Fruits</p>
               <p className="text-sm text-gray-500">Food · 5 kg</p>
             </div>
             <span className="bg-green-100 text-green-600 px-3 py-1 text-xs rounded-full">completed</span>
           </div>
-          <div className="p-4 border rounded-lg flex justify-between items-center">
+          <div className="p-4 border rounded-lg flex flex-wrap justify-between items-center gap-2">
             <div>
               <p className="font-semibold text-gray-700">Educational Books</p>
               <p className="text-sm text-gray-500">Books · 20 pcs</p>
             </div>
             <span className="bg-blue-100 text-blue-600 px-3 py-1 text-xs rounded-full">requested</span>
           </div>
-          <div className="p-4 border rounded-lg flex justify-between items-center">
+          <div className="p-4 border rounded-lg flex flex-wrap justify-between items-center gap-2">
             <div>
               <p className="font-semibold text-gray-700">Winter Clothes</p>
               <p className="text-sm text-gray-500">Clothes · 15 items</p>
@@ -71,17 +71,17 @@ const Dashboard = () => {
       </div>
 
       {/* Urgent Requests */}
-      <div className="bg-white p-6 rounded-xl shadow">
+      <div className="bg-white p-4 sm:p-6 rounded-xl shadow">
         <h2 className="text-lg font-bold mb-4">Urgent Requests Nearby</h2>
         <div className="space-y-3">
-          <div className="p-4 rounded-lg bg-red-50 border border-red-200 flex justify-between items-center">
+          <div className="p-4 rounded-lg bg-red-50 border border-red-200 flex flex-wrap justify-between items-center gap-2">
             <div>
               <p className="font-semibold text-red-600">Emergency Food Drive</p>
               <p className="text-sm text-gray-600">Food Needed</p>
             </div>
             <button className="bg-red-500 text-white px-3 py-1 rounded-lg hover:bg-red-600">Help Now</button>
           </div>
-          <div className="p-4 rounded-lg bg-yellow-50 border border-yellow-200 flex justify-between items-center">
+          <div className="p-4 rounded-lg bg-yellow-50 border border-yellow-200 flex flex-wrap justify-between items-center gap-2">
             <div>
               <p className="font-semibold text-yellow-600">School Supply Drive</p>
               <p className="text-sm text-gray-600">Education Kits Needed</p>

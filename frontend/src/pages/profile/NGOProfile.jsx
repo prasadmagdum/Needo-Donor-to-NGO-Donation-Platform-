@@ -117,10 +117,10 @@ const NGOProfile = () => {
   }
 
   return (
-    <div className="bg-gray-50 min-h-screen py-10 px-4">
-      <div className="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow">
+    <div className="bg-gray-50 min-h-screen py-6 sm:py-10 px-3 sm:px-4">
+      <div className="max-w-3xl mx-auto bg-white p-4 sm:p-8 rounded-2xl shadow">
 
-        <div className="flex justify-between mb-6">
+        <div className="flex flex-wrap justify-between gap-3 mb-6">
           <h1 className="text-2xl font-bold text-sky-600">NGO Profile</h1>
         </div>
 

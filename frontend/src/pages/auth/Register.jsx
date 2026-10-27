@@ -42,8 +42,8 @@ const Register = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-green-100 to-blue-100">
-      <div className="w-full max-w-lg bg-white p-8 rounded-2xl shadow-xl">
+    <div className="flex items-center justify-center min-h-screen px-4 py-6 bg-gradient-to-br from-green-100 to-blue-100">
+      <div className="w-full max-w-lg bg-white p-5 sm:p-8 rounded-2xl shadow-xl">
         <h1 className="text-3xl font-bold text-center text-green-600 mb-6">
           Create Account
         </h1>

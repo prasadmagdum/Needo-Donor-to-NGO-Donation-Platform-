@@ -43,7 +43,7 @@ const EditDonation = () => {
   if (loading) return <p>Loading...</p>;
 
   return (
-    <div className="max-w-2xl mx-auto bg-white p-6 rounded-2xl shadow">
+    <div className="max-w-2xl mx-auto bg-white p-4 sm:p-6 rounded-2xl shadow">
       <h1 className="text-xl font-bold text-sky-600 mb-4">✏️ Edit Donation</h1>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <input {...register("title")} placeholder="Title" className="w-full border rounded p-2" />

@@ -108,7 +108,7 @@ const BrowseDonations = () => {
   // ✅ Handle NGO without profile
   if (user?.role === "ngo" && isProfileLoaded && !hasProfile) {
     return (
-      <div className="p-8 bg-gray-50 min-h-screen flex flex-col items-center justify-center text-center">
+      <div className="p-4 sm:p-8 bg-gray-50 min-h-screen flex flex-col items-center justify-center text-center">
         <Info className="w-10 h-10 text-sky-600 mb-3" />
         <h2 className="text-xl font-semibold text-gray-800 mb-2">
           Complete Your NGO Profile
@@ -128,7 +128,7 @@ const BrowseDonations = () => {
   }
 
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
+    <div className="p-3 sm:p-6 bg-gray-50 min-h-screen">
       {/* Header */}
       <div className="flex items-center gap-3 mb-6">
         <Package className="text-orange-500 w-7 h-7" />
